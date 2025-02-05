@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BestBuildDBL</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#accueilID"><img src="logo telephone.png" alt="Logo" /></a>
+      </div>
+      <nav>
+        <button class="burger" id="burger"><img src="ImageECF/menuburger.png" alt="" id="menuECF"></button>
+    <div class="menu" id="menu">
+        <button class="close" id="close">✖</button>
+        <a href="#accueilID">Accueil</a>
+        <a href="#perso">Personnages</a>
+    </div>
+      </nav>
+    </header>
+    <main>
+      <section id="accueil">
+        <div class="accueilMain" id="accueilID">
+          <a href="#perso" class="btn-suivant">
+            Suivant
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+        </a>
+        </div>
+        <h1 id="perso">Voici les meilleurs personnages du jeu :</h1>
+        <div id="characters-list" class="grid-container"></div>
+      </section>
+
+      <section id="details" class="hidden">
+        <button id="back">Retour</button>
+        <div id="character-details"></div>
+      </section>
+    </main>
+    <div class="modal-overlay" id="modalOverlay" style="display: none">
+      <div class="modal">
+        <div id="modalContent"></div>
+        <button class="close-btn" id="closeModal">X</button>
+      </div>
+    </div>
+    <footer>
+      <h1>©2025-DragonBallLegends</h1>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
